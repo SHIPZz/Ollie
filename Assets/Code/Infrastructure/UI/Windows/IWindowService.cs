@@ -13,7 +13,6 @@ namespace Code.Infrastructure.UI.Windows
 		void Open<TView>(bool onTop = false) where TView : MonoBehaviour, IWindowView;
 		void Close<TView>() where TView : MonoBehaviour, IWindowView;
 		bool IsOpen<TView>() where TView : MonoBehaviour, IWindowView;
-		TPresenter GetPresenter<TPresenter>() where TPresenter : class, IWindowPresenter;
 	}
 }
 
